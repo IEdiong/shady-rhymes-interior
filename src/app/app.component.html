@@ -1,1 +1,9 @@
 <shad-header></shad-header>
+<div class="container">
+  <div class="choice-container">
+    <shad-choice-card
+      *ngFor="let choice of choices"
+      [choice]="choice"
+    ></shad-choice-card>
+  </div>
+</div>
