@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+// Utility class
+.container {
+  width: min(89.33%, 1280px);
+  margin-inline: auto;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+}
