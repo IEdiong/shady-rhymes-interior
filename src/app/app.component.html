@@ -1,9 +1,43 @@
+<!-- header -->
 <shad-header></shad-header>
-<div class="container">
+<main class="container">
+  <!-- list of cards -->
   <div class="choice-container">
     <shad-choice-card
       *ngFor="let choice of choices"
       [choice]="choice"
     ></shad-choice-card>
   </div>
-</div>
+
+  <!-- Visualize your idea -->
+  <section class="section__two">
+    <div class="img-box">
+      <img src="../assets/sitting-room.png" alt="sitting room" />
+    </div>
+    <div class="text-box">
+      <div class="text-summary">
+        <h2>Visualize your ideas with us</h2>
+        <p>
+          We are ready to help you build and also realize the room design that
+          you dream of, with our experts and also the best category
+          recommendations from us
+        </p>
+      </div>
+      <div class="accordion">
+        <p>Accordion component</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- feature products -->
+  <section class="section__three">
+    <h2>Featured Product</h2>
+    <div class="fp__grid">
+      <article>
+        <div class="p-img">
+          <img src="../assets/product-1.png" alt="chair" />
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
