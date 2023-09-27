@@ -62,3 +62,67 @@
     justify-content: space-between;
   }
 }
+
+.section__four {
+  color: #564e4e;
+  padding-block: 40px;
+  background: linear-gradient(280deg, #fff 0%, #faf5f2 100%);
+
+  & > h2 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 200%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  & .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
+
+.testimonial-card {
+  & > h3 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 200%;
+  }
+
+  & > p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 200%;
+    margin-top: 10px;
+  }
+}
+
+.profile {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  & > .img-box {
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+    & > img {
+      object-fit: cover;
+    }
+  }
+}
+
+.profile-details {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 200%;
+
+  & > .role {
+    font-size: 12px;
+    font-weight: 300;
+  }
+}

@@ -1,42 +1,67 @@
 <!-- header -->
 <shad-header></shad-header>
-<main class="container">
-  <!-- list of cards -->
-  <div class="choice-container">
-    <shad-choice-card
-      *ngFor="let choice of choices"
-      [choice]="choice"
-    ></shad-choice-card>
+<main>
+  <div class="container">
+    <!-- list of cards -->
+    <div class="choice-container">
+      <shad-choice-card
+        *ngFor="let choice of choices"
+        [choice]="choice"
+      ></shad-choice-card>
+    </div>
+
+    <!-- Visualize your idea -->
+    <section class="section__two">
+      <div class="img-box">
+        <img src="../assets/sitting-room.png" alt="sitting room" />
+      </div>
+      <div class="text-box">
+        <div class="text-summary">
+          <h2>Visualize your ideas with us</h2>
+          <p>
+            We are ready to help you build and also realize the room design that
+            you dream of, with our experts and also the best category
+            recommendations from us
+          </p>
+        </div>
+        <div class="accordion">
+          <p>Accordion component</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- feature products -->
+    <section class="section__three">
+      <h2>Featured Product</h2>
+      <div class="fp__grid">
+        <shad-product-card
+          *ngFor="let image of productImages"
+          image="{{ image.imgUrl }}"
+        ></shad-product-card>
+      </div>
+    </section>
   </div>
-
-  <!-- Visualize your idea -->
-  <section class="section__two">
-    <div class="img-box">
-      <img src="../assets/sitting-room.png" alt="sitting room" />
-    </div>
-    <div class="text-box">
-      <div class="text-summary">
-        <h2>Visualize your ideas with us</h2>
+  <!-- testimonials -->
+  <section class="section__four">
+    <h2>What they say about our services</h2>
+    <div class="container testimonial-container">
+      <article class="testimonial-card">
+        <h3>Best planning service</h3>
         <p>
-          We are ready to help you build and also realize the room design that
-          you dream of, with our experts and also the best category
-          recommendations from us
+          I had fantastic experience at shady rhymes with pax planner, shady
+          rhymes was so helpful and friendly and went above and beyond to help
+          me configure my perfect walk in wardobe room.
         </p>
-      </div>
-      <div class="accordion">
-        <p>Accordion component</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- feature products -->
-  <section class="section__three">
-    <h2>Featured Product</h2>
-    <div class="fp__grid">
-      <shad-product-card
-        *ngFor="let image of productImages"
-        image="{{ image.imgUrl }}"
-      ></shad-product-card>
+        <div class="profile">
+          <div class="img-box">
+            <img src="../assets/profile-pic-1.svg" alt="profile picture" />
+          </div>
+          <div class="profile-details">
+            <p>John doe</p>
+            <p class="role">Architect in agung podomoro land</p>
+          </div>
+        </div>
+      </article>
     </div>
   </section>
 </main>
