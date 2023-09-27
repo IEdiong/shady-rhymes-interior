@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { choices } from 'src/data/source';
-import { IChoice } from 'src/types';
+import { choices, productsImg } from 'src/data/source';
+import { IChoice, IProductImage } from 'src/types';
 
 @Component({
   selector: 'app-root',
@@ -9,8 +9,10 @@ import { IChoice } from 'src/types';
 })
 export class AppComponent implements OnInit {
   choices!: IChoice[];
+  productImages!: IProductImage[];
 
   ngOnInit(): void {
     this.choices = choices;
+    this.productImages = productsImg;
   }
 }

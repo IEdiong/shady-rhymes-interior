@@ -5,4 +5,9 @@ type IChoice = {
   summary: string;
 };
 
-export { IChoice };
+type IProductImage = {
+  id: number;
+  imgUrl: string;
+};
+
+export { IChoice, IProductImage };

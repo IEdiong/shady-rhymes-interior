@@ -1,4 +1,4 @@
-import { IChoice } from 'src/types';
+import { IChoice, IProductImage } from 'src/types';
 
 export const choices: IChoice[] = [
   {
@@ -24,5 +24,24 @@ export const choices: IChoice[] = [
     imgUrl: '../assets/qualified-icon.svg',
     title: 'Qualified employee',
     summary: 'Our employees are the best of the field from the city',
+  },
+];
+
+export const productsImg: IProductImage[] = [
+  {
+    id: 1,
+    imgUrl: '../assets/product-1.png',
+  },
+  {
+    id: 2,
+    imgUrl: '../assets/product-2.png',
+  },
+  {
+    id: 3,
+    imgUrl: '../assets/product-3.png',
+  },
+  {
+    id: 4,
+    imgUrl: '../assets/product-4.png',
   },
 ];

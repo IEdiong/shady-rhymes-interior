@@ -33,17 +33,10 @@
   <section class="section__three">
     <h2>Featured Product</h2>
     <div class="fp__grid">
-      <article>
-        <div class="p-img">
-          <img src="../assets/product-1.png" alt="chair" />
-        </div>
-        <div class="p-body">
-          <h3>Product</h3>
-          <p class="category">category</p>
-          <img src="../assets/star-rating.svg" alt="star rating" />
-          <p class="price">$ 16.00</p>
-        </div>
-      </article>
+      <shad-product-card
+        *ngFor="let image of productImages"
+        image="{{ image.imgUrl }}"
+      ></shad-product-card>
     </div>
   </section>
 </main>
