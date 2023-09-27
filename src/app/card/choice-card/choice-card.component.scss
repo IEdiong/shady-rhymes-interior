@@ -1,3 +1,17 @@
+:host {
+  flex: 1;
+}
+
+@media (min-width: 50em) {
+  .choice-card {
+    height: 100%;
+
+    & a {
+      margin-top: auto;
+    }
+  }
+}
+
 .choice-card {
   padding: 10px;
   border-radius: 10px;

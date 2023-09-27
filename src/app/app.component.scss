@@ -164,3 +164,12 @@
   font-weight: 400;
   line-height: 200%;
 }
+
+@media (min-width: 50em) {
+  .choice-container {
+    padding-top: 126px;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 10px;
+  }
+}
