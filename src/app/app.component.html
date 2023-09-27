@@ -45,23 +45,10 @@
   <section class="section__four">
     <h2>What they say about our services</h2>
     <div class="container testimonial-container">
-      <article class="testimonial-card">
-        <h3>Best planning service</h3>
-        <p>
-          I had fantastic experience at shady rhymes with pax planner, shady
-          rhymes was so helpful and friendly and went above and beyond to help
-          me configure my perfect walk in wardobe room.
-        </p>
-        <div class="profile">
-          <div class="img-box">
-            <img src="../assets/profile-pic-1.svg" alt="profile picture" />
-          </div>
-          <div class="profile-details">
-            <p>John doe</p>
-            <p class="role">Architect in agung podomoro land</p>
-          </div>
-        </div>
-      </article>
+      <shad-review-card
+        *ngFor="let item of reviewCards"
+        [review]="item"
+      ></shad-review-card>
     </div>
   </section>
 </main>

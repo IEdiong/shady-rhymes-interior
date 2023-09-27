@@ -1,4 +1,4 @@
-import { IChoice, IProductImage } from 'src/types';
+import { IChoice, IProductImage, IReviewCard } from 'src/types';
 
 export const choices: IChoice[] = [
   {
@@ -43,5 +43,26 @@ export const productsImg: IProductImage[] = [
   {
     id: 4,
     imgUrl: '../assets/product-4.png',
+  },
+];
+
+export const testimonials: IReviewCard[] = [
+  {
+    id: 1,
+    title: 'Best planning service',
+    body: 'I had fantastic experience at shady rhymes with pax planner, shady rhymes was so helpful and friendly and went above and beyond to help me configure my perfect walk in wardobe room.',
+    dpUrl: '../assets/profile-pic-1.svg',
+  },
+  {
+    id: 2,
+    title: 'Flexible and reliable',
+    body: 'Terrific work from beginning to end can work any angle from minimal help to complete project handling professional without a doubt!  Love!',
+    dpUrl: '../assets/profile-pic-2.svg',
+  },
+  {
+    id: 3,
+    title: 'solution innovative',
+    body: '"I loved working with Darla shady rhymes for about 2 years and highly recommend anyone looking for an interior designer agency who brings creativity but designs something that fits YOU and your style.',
+    dpUrl: '../assets/profile-pic-3.svg',
   },
 ];

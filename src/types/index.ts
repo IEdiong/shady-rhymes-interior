@@ -10,4 +10,11 @@ type IProductImage = {
   imgUrl: string;
 };
 
-export { IChoice, IProductImage };
+type IReviewCard = {
+  id: number;
+  title: string;
+  body: string;
+  dpUrl: string;
+};
+
+export { IChoice, IProductImage, IReviewCard };
