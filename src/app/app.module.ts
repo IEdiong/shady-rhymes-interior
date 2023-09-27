@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { ChoiceCardComponent } from './card/choice-card/choice-card.component';
 import { ProductCardComponent } from './card/product-card/product-card.component';
 import { ReviewCardComponent } from './card/review-card/review-card.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ReviewCardComponent } from './card/review-card/review-card.component';
     HeaderComponent,
     ChoiceCardComponent,
     ProductCardComponent,
-    ReviewCardComponent
+    ReviewCardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule

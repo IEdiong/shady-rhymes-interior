@@ -1,0 +1,55 @@
+.footer {
+  padding-block-start: 20px;
+  padding-block-end: 28px;
+  color: white;
+  background: linear-gradient(300deg, #000 31.42%, #4b4b4b 117.78%);
+
+  & img {
+    width: 124px;
+  }
+
+  & .nav {
+    margin-top: 40px;
+  }
+
+  & h2 {
+    color: #fadcd9;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  & .copyright {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nav-group {
+  margin-top: 40px;
+
+  & ul {
+    list-style: none;
+  }
+}
+
+.group {
+  margin-top: 10px;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 20px;
+}
